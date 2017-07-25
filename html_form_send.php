@@ -2,12 +2,12 @@
 if(isset($_POST['email'])) {
 
 	// CHANGE THE TWO LINES BELOW
-	$email_to = "bhuynh37@gmail.com, syc25@uw.edu";
+	$email_to = "austinquachh@gmail.com";
 
 	$email_subject = "Musician's Clinic";
 
 	function died($error) {
-		header('Location: http://students.washington.edu/kkpsi/musiciansclinic/#error');
+		header('Location: http://students.washington.edu/kkpsi/jrsrday/#error');
 		// your error code can go here
 		echo "We're sorry, but there's errors found with the form you submitted.<br /><br />";
 		echo $error."<br /><br />";
@@ -61,6 +61,6 @@ $headers = 'From: '.$email."\r\n".
 @mail($email_to, $email_subject, $email_message, $headers);
 
 //Success redirect
-header('Location: http://students.washington.edu/kkpsi/musiciansclinic/#good');
+header('Location: http://students.washington.edu/kkpsi/musiciansclinic/#success');
 }
 ?>
